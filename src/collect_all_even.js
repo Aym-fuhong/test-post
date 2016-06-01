@@ -4,7 +4,7 @@ function collect_same_elements(collection_a, object_b) {
  for(var i =0;i<collection_a.length;i++){ 
  	for(var j=0;j<object_b.value.length;j++){
    	    if(collection_a[i].key==object_b.value[j]){  	    	
-   	    	newarr.push(collection_a[i].key );
+   	    	newarr.push('"'+collection_a[i].key+'"');
    	    }
    }
  }
